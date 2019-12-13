@@ -1,0 +1,51 @@
+{
+    "name": "macsidigital/laravel-uuid",
+    "description": "Laravel Mailer package",
+    "homepage": "https://github.com/MacsiDigital/laravel-uuid",
+    "keywords": ["macsidigital", "laravel-uuid", "uuid", "laravel", "client"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Colin Hall",
+            "email": "colin@macsi.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3", 
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uuid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uuid\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uuid\\Providers\\UuidServiceProvider"
+            ],
+            "aliases": {
+                "Uuid": "Uuid\\Facades\\Uuid"
+            }
+        }
+    },
+    "minimum-stability" : "dev"
+}
