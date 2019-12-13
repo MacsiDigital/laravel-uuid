@@ -12,7 +12,30 @@ You can install the package via composer:
 composer require spatie/laravel-uuid
 ```
 
-The service provider will automatically get registered. Or you may manually add the service provider in your config/app.php file:
+This is quite a simple package, which can be used to override teh primary key to uuid, or to add an additional uuid field, our prefered option to keep an incrementing index.
+
+Add a uuid field
+
+``` php
+	// primary key implementation
+    $table->uuid('id')->primary();
+    
+    // or implementation for additional field
+
+    $table->uuid('uuid');  
+
+});
+```
+
+Thats it! unless we use a different column name to uuid for the uuid field, then do thisdd teh following method
+
+``` php
+	 public function uuidColumn(): string
+    {
+        return 'id';
+    }
+});
+```
 
 ### Changelog
 

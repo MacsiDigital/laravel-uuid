@@ -21,7 +21,7 @@ trait GeneratesUuid
 
     public function getIncrementing()
     {
-    	if($this->uuidColumn() == 'id'){
+    	if($this->uuidColumn() == $this->getKeyName()){
 	        return false;
     	}
     	return true;
