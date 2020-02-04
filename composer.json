@@ -1,6 +1,6 @@
 {
     "name": "macsidigital/laravel-uuid",
-    "description": "Laravel Mailer package",
+    "description": "Laravel UUID package",
     "homepage": "https://github.com/MacsiDigital/laravel-uuid",
     "keywords": ["macsidigital", "laravel-uuid", "uuid", "laravel", "client"],
     "type": "library",

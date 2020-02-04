@@ -9,10 +9,10 @@ This package can be used in Laravel 6.0 or higher.
 You can install the package via composer:
 
 ``` bash
-composer require spatie/laravel-uuid
+composer require macsidigital/laravel-uuid
 ```
 
-This is quite a simple package, which can be used to override teh primary key to uuid, or to add an additional uuid field, our prefered option to keep an incrementing index.
+This is quite a simple package, which can be used to override the primary key to uuid, or to add an additional uuid field, our prefered option to keep an incrementing index.
 
 Add a uuid field
 
@@ -27,7 +27,7 @@ Add a uuid field
 });
 ```
 
-Thats it! unless we use a different column name to uuid for the uuid field, then do thisdd teh following method
+Thats it! unless we use a different column name for the uuid field, then we add the following method
 
 ``` php
 	 public function uuidColumn(): string
