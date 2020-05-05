@@ -2,7 +2,8 @@
     "name": "macsidigital/laravel-uuid",
     "description": "Laravel UUID package",
     "homepage": "https://github.com/MacsiDigital/laravel-uuid",
-    "keywords": ["macsidigital", "laravel-uuid", "uuid", "laravel", "client"],
+    "keywords": ["macsidigital", "laravel-uuid", "uuid", "laravel"],
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
