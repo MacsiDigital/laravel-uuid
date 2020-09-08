@@ -2,8 +2,8 @@
 
 namespace Uuid\Tests;
 
-use Uuid\Traits\GeneratesUuid;
 use Illuminate\Database\Eloquent\Model;
+use Uuid\Traits\GeneratesUuid;
 
 class PrimaryTest extends Model
 {
@@ -13,5 +13,4 @@ class PrimaryTest extends Model
     {
         return 'id';
     }
-
 }

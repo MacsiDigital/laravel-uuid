@@ -2,10 +2,9 @@
 
 namespace Uuid\Tests\Unit;
 
+use Uuid\Tests\PrimaryTest;
 use Uuid\Tests\Test;
 use Uuid\Tests\TestCase;
-use Uuid\Tests\PrimaryTest;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UuidTest extends TestCase
 {

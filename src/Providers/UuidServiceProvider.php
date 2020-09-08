@@ -2,8 +2,6 @@
 
 namespace Uuid\Providers;
 
-use Illuminate\Support\Str;
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
 
 class UuidServiceProvider extends ServiceProvider
@@ -13,7 +11,6 @@ class UuidServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       
     }
 
     /**
@@ -21,7 +18,5 @@ class UuidServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
     }
-
 }
