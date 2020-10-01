@@ -3,7 +3,6 @@
 namespace Uuid\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Uuid\Facades\Package;
 
 class UuidServiceProvider extends ServiceProvider
 {
