@@ -3,6 +3,7 @@
 namespace Uuid\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Uuid\Facades\Package;
 
 class UuidServiceProvider extends ServiceProvider
 {
@@ -18,5 +19,6 @@ class UuidServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind('uuid', 'MacsiDigital\Uuid\Package');
     }
 }
