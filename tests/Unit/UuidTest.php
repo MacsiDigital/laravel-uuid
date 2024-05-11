@@ -15,10 +15,10 @@ class UuidTest extends TestCase
         $test->name = 'Primary Unit Test';
         $test->save();
 
-        $this->assertDatabaseHas('primary_tests', $test->toArray());
+        $this->assertDatabaseHas('primary_tests', $test->getAttributes());
 
         $retreived_test = PrimaryTest::whereName('Primary Unit Test')->first();
-        
+
         $this->assertTrue($retreived_test->id != '');
     }
 
@@ -29,10 +29,10 @@ class UuidTest extends TestCase
         $test->name = 'Unit Test';
         $test->save();
 
-        $this->assertDatabaseHas('tests', $test->toArray());
+        $this->assertDatabaseHas('tests', $test->getAttributes());
 
         $retreived_test = Test::whereName('Unit Test')->first();
-        
+
         $this->assertTrue($retreived_test->uuid != '');
     }
 }
