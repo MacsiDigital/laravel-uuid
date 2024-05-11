@@ -18,7 +18,7 @@ We invest a lot in creating [open source packages](https://macsidigital.co.uk/op
 
 ## Installation
 
-This package can be used in Laravel 6.0 or higher.
+This package can be used in Laravel 10.0 or higher with PHP 8.0 and higher.  There are older versions which go back to PHP7.4 and Laravel 6.
 
 You can install the package via composer:
 
@@ -39,6 +39,16 @@ Add a uuid field
     // or implementation for additional field
 
     $table->uuid('uuid');  
+
+});
+```
+
+Add the trait to get automatic UUID generation
+
+``` php
+	class FakeModel extends Model
+
+    use GeneratesUuid;
 
 });
 ```
