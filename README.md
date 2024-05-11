@@ -46,11 +46,15 @@ Add a uuid field
 Add the trait to get automatic UUID generation
 
 ``` php
-	class FakeModel extends Model
+namespace App\Models;
+use Uuid\Traits\GeneratesUuid;
 
-    use GeneratesUuid;
+class FakeModel extends Model
+{
 
-});
+use GeneratesUuid;
+
+}
 ```
 
 That's it! unless we use a different column name for the uuid field, then we add the following method.
